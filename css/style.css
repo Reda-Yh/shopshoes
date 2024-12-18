@@ -1,14 +1,47 @@
 :root {
-  --primary-color: #3498db;
-  --secondary-color: #2ecc71;
-  --dark-color: #2c3e50;
-  --light-color: #ecf0f1;
+  --primary-color: #2c3e50;
+  --secondary-color: #e74c3c;
+  --accent-color: #3498db;
+  --background-color: #f8f9fa;
+  --text-color: #2c3e50;
+  --border-radius: 10px;
+  --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
 }
 
 body {
-  padding-top: 56px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
 }
+
+  /* Navbar Styling */
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  /* .navbar:hover {
+    background-color: rgba(245, 245, 245, 0.9) !important;
+  } */
+  
+  .navbar-brand {
+    font-weight: 700;
+    color: var(--primary-color) !important;
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    color: var(--text-color) !important;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: var(--secondary-color) !important;
+  }
 
 /* Carousel styling */
 .carousel-item {
@@ -48,15 +81,80 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
+#image-cart{
+  width: 250px;
+}
+
 .product-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
 }
 
 .product-image {
-  height: 200px;
+  height: 290px;
   object-fit: cover;
 }
+
+/* Cart Cards */
+.card {
+  border: none;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.btn {
+  border-radius: var(--border-radius);
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+}
+
+.btn-outline-secondary {
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+.btn-primary {
+  background-color: var(--secondary-color) !important;
+  border-color: var(--secondary-color) !important;
+}
+
+.btn-primary:hover {
+  background-color: #c0392b !important; /* Une teinte plus sombre de la couleur secondaire */
+  border-color: #c0392b !important; /* Une teinte plus sombre pour la bordure */
+}
+
+
+/* Input Fields */
+input[type="number"] {
+  border-radius: var(--border-radius);
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 5px rgba(26, 188, 156, 0.5);
+}
+
+/* Cart Total */
+#cart-total {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
 
 /* Footer */
 footer {
@@ -94,5 +192,16 @@ footer a:hover {
   
   .carousel-caption p {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-body {
+    text-align: center;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
   }
 }

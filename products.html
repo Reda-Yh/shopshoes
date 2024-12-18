@@ -1,46 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>All Products - ShoeStore</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="/">ShoeStore</a>
+      <a class="navbar-brand" href="/"><i class="fas fa-shoe-prints me-2"></i>ShoeStore</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/">Home</a>
+            <a class="nav-link" href="./"><i class="fas fa-home me-1"></i>Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="/products.html">Products</a>
+            <a class="nav-link" href="./products.html"><i class="fas fa-shopping-bag me-1"></i>Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/contact.html">Contact</a>
+            <a class="nav-link" href="./contact.html"><i class="fas fa-envelope me-1"></i>Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/login.html">Login</a>
+            <a class="nav-link" href="./cart.html">
+              <i class="fas fa-shopping-cart me-1"></i>Cart
+              <span id="cart-count" class="badge bg-danger">0</span>
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/cart.html">Cart <span id="cart-count" class="badge bg-primary">0</span></a>
+          <!-- Dropdown for Login/Register -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-user me-1"></i> Account
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item" href="./login.html">
+                  <i class="fas fa-sign-in-alt me-1"></i> Login
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="./register.html">
+                  <i class="fas fa-user-plus me-1"></i> Register
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+
+
   <!-- Products Section -->
-  <div class="container my-5 pt-4">
-    <h2 class="mb-4">All Products</h2>
-    
+  <section class="container my-5 pt-4">
+    <h2 class="text-center mb-4">All Products</h2>
     <!-- Filters -->
     <div class="row mb-4">
       <div class="col-md-6">
@@ -56,45 +86,16 @@
         </select>
       </div>
     </div>
-
-    <!-- Products Grid -->
-    <div id="products-list" class="row">
+    <div id="products-list" class="row g-4">
       <!-- Products will be loaded dynamically -->
     </div>
-  </div>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-light py-4 mt-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h5>ShoeStore</h5>
-          <p>Your one-stop shop for quality footwear.</p>
-        </div>
-        <div class="col-md-4">
-          <h5>Quick Links</h5>
-          <ul class="list-unstyled">
-            <li><a href="/" class="text-light">Home</a></li>
-            <li><a href="/products.html" class="text-light">Products</a></li>
-            <li><a href="/contact.html" class="text-light">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h5>Contact Us</h5>
-          <p>Email: info@shoestore.com<br>Phone: (555) 123-4567</p>
-        </div>
-      </div>
-      <div class="text-center mt-3">
-        <p class="mb-0">&copy; 2024 ShoeStore. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script type="module">
-    import { setupProductsPage } from './src/js/products.js';
+        import { setupProductsPage } from './src/js/products.js';
     import { Cart } from './src/js/cart.js';
-    
+
     window.addEventListener('DOMContentLoaded', () => {
       setupProductsPage();
       const cart = new Cart();
@@ -102,4 +103,5 @@
     });
   </script>
 </body>
+
 </html>

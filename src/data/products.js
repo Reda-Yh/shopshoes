@@ -3,7 +3,7 @@ export const products = [
     id: 1,
     name: "Running Shoes Pro",
     price: 129.99,
-    image: "../images/1.webp",
+    image: "../images/puma-rider.jpg",
     description: "Professional running shoes with advanced cushioning. Features include breathable mesh upper, responsive cushioning, and durable outsole for maximum performance.",
     promotion: true
   },
@@ -19,7 +19,7 @@ export const products = [
     id: 3,
     name: "Sport Edition X",
     price: 149.99,
-    image: "../images/3.jpeg",
+    image: "../images/nike3.jpg",
     description: "High-performance sports shoes designed for athletes. Enhanced stability, superior grip, and lightweight construction for optimal performance.",
     promotion: false
   },
@@ -35,7 +35,7 @@ export const products = [
     id: 5,
     name: "Tennis Master",
     price: 134.99,
-    image: "../images/5.jpeg",
+    image: "../images/nike.jpg",
     description: "Chaussures de tennis professionnelles avec un excellent maintien latéral. Parfaites pour les courts en dur.",
     promotion: false
   },

@@ -1,0 +1,155 @@
+/* Modern Shoe Store Theme */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #e74c3c;
+    --accent-color: #3498db;
+    --background-color: #f8f9fa;
+    --text-color: #2c3e50;
+    --border-radius: 10px;
+    --box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-weight: 700;
+    color: var(--primary-color) !important;
+    font-size: 1.5rem;
+  }
+  
+  .nav-link {
+    font-weight: 500;
+    color: var(--text-color) !important;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: var(--secondary-color) !important;
+  }
+  
+  /* Auth Forms Styling */
+  .card {
+    border: none;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
+  }
+  
+  .card-body {
+    padding: 2.5rem;
+  }
+  
+  .card-title {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-label {
+    font-weight: 500;
+    color: var(--text-color);
+  }
+  
+  .form-control {
+    border: 2px solid #e9ecef;
+    border-radius: var(--border-radius);
+    padding: 0.8rem 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.1);
+  }
+  
+  .btn-primary {
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.8rem 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+  }
+  
+  /* Auth Pages Background */
+  .auth-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&q=80') no-repeat center center;
+    background-size: cover;
+    opacity: 0.15;
+    z-index: -1;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background-color: var(--primary-color) !important;
+    margin-top: auto;
+  }
+  
+  footer h5 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+  }
+  
+  footer a {
+    color: rgba(255, 255, 255, 0.8) !important;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: var(--secondary-color) !important;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .card-body {
+      padding: 1.5rem;
+    }
+    
+    .card-title {
+      font-size: 1.75rem;
+    }
+  }
+  
+  /* Animation Effects */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .card {
+    animation: fadeIn 0.6s ease-out;
+  }
