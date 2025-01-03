@@ -118,13 +118,5 @@ export const products = [
     image: "https://images.unsplash.com/photo-1539185441755-769473a23570",
     description: "Versatile cross-training shoes with enhanced stability. Ideal for varied workout routines.",
     promotion: true
-  },
-  {
-    id: 16,
-    name: "Retro Classi",
-    price: 119.99,
-    image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
-    description: "Vintage-inspired sneakers with modern comfort features. Timeless style for everyday wear.",
-    promotion: false
   }
 ];
