@@ -115,7 +115,7 @@ export const products = [
     id: 15,
     name: "CrossTrain Elite",
     price: 154.99,
-    image: "https://images.unsplash.com/photo-1539185441755-769473a23570",
+    image: "https://images.unsplash.com/photo-1584735175315-9d5df23860e6",
     description: "Versatile cross-training shoes with enhanced stability. Ideal for varied workout routines.",
     promotion: true
   }
