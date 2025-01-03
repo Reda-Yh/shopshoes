@@ -121,7 +121,7 @@ export const products = [
   },
   {
     id: 16,
-    name: "Retro Classic",
+    name: "Retro Classi",
     price: 119.99,
     image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
     description: "Vintage-inspired sneakers with modern comfort features. Timeless style for everyday wear.",
