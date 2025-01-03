@@ -65,14 +65,6 @@ export const products = [
   },
   {
     id: 9,
-    name: "Mountain Explorer",
-    price: 189.99,
-    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
-    description: "All-terrain hiking shoes with waterproof membrane and superior grip. Perfect for mountain trails and outdoor adventures.",
-    promotion: true
-  },
-  {
-    id: 10,
     name: "Urban Runner Elite",
     price: 159.99,
     image: "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2",
@@ -80,7 +72,7 @@ export const products = [
     promotion: false
   },
   {
-    id: 11,
+    id: 10,
     name: "Studio Flex Pro",
     price: 129.99,
     image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a",
@@ -88,7 +80,7 @@ export const products = [
     promotion: true
   },
   {
-    id: 12,
+    id: 11,
     name: "Street Style X",
     price: 144.99,
     image: "https://images.unsplash.com/photo-1549298916-b41d501d3772",
@@ -96,7 +88,7 @@ export const products = [
     promotion: false
   },
   {
-    id: 13,
+    id: 12,
     name: "Marathon Master",
     price: 199.99,
     image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa",
@@ -104,7 +96,7 @@ export const products = [
     promotion: true
   },
   {
-    id: 14,
+    id: 13,
     name: "Velocity Boost",
     price: 169.99,
     image: "https://images.unsplash.com/photo-1605348532760-6753d2c43329",
@@ -112,7 +104,7 @@ export const products = [
     promotion: true
   },
   {
-    id: 15,
+    id: 14,
     name: "Cloud Walker",
     price: 139.99,
     image: "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
@@ -120,7 +112,7 @@ export const products = [
     promotion: false
   },
   {
-    id: 16,
+    id: 15,
     name: "CrossTrain Elite",
     price: 154.99,
     image: "https://images.unsplash.com/photo-1539185441755-769473a23570",
@@ -128,19 +120,11 @@ export const products = [
     promotion: true
   },
   {
-    id: 17,
+    id: 16,
     name: "Retro Classic",
     price: 119.99,
     image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
     description: "Vintage-inspired sneakers with modern comfort features. Timeless style for everyday wear.",
     promotion: false
-  },
-  {
-    id: 18,
-    name: "Aqua Grip",
-    price: 134.99,
-    image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a",
-    description: "Water-resistant training shoes with special grip soles. Perfect for outdoor workouts in any weather.",
-    promotion: true
   }
 ];
