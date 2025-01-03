@@ -62,5 +62,85 @@ export const products = [
     image: "../images/14.webp",
     description: "Idéales pour les sessions de fitness et de training. Polyvalentes et respirantes.",
     promotion: true
+  },
+  {
+    id: 9,
+    name: "Mountain Explorer",
+    price: 189.99,
+    image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff",
+    description: "All-terrain hiking shoes with waterproof membrane and superior grip. Perfect for mountain trails and outdoor adventures.",
+    promotion: true
+  },
+  {
+    id: 10,
+    name: "Urban Runner Elite",
+    price: 159.99,
+    image: "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2",
+    description: "Premium city running shoes with enhanced cushioning for concrete surfaces. Stylish design meets performance.",
+    promotion: false
+  },
+  {
+    id: 11,
+    name: "Studio Flex Pro",
+    price: 129.99,
+    image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a",
+    description: "Lightweight training shoes designed for studio workouts. Superior flexibility and stability for dynamic movements.",
+    promotion: true
+  },
+  {
+    id: 12,
+    name: "Street Style X",
+    price: 144.99,
+    image: "https://images.unsplash.com/photo-1549298916-b41d501d3772",
+    description: "Modern streetwear sneakers with premium materials. The perfect blend of comfort and urban fashion.",
+    promotion: false
+  },
+  {
+    id: 13,
+    name: "Marathon Master",
+    price: 199.99,
+    image: "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa",
+    description: "Professional marathon running shoes with carbon fiber plate. Designed for maximum speed and endurance.",
+    promotion: true
+  },
+  {
+    id: 14,
+    name: "Velocity Boost",
+    price: 169.99,
+    image: "https://images.unsplash.com/photo-1605348532760-6753d2c43329",
+    description: "High-performance sprinting shoes with responsive cushioning. Ideal for track and field athletes.",
+    promotion: true
+  },
+  {
+    id: 15,
+    name: "Cloud Walker",
+    price: 139.99,
+    image: "https://images.unsplash.com/photo-1560769629-975ec94e6a86",
+    description: "Ultra-comfortable walking shoes with innovative cushioning technology. Perfect for all-day comfort.",
+    promotion: false
+  },
+  {
+    id: 16,
+    name: "CrossTrain Elite",
+    price: 154.99,
+    image: "https://images.unsplash.com/photo-1539185441755-769473a23570",
+    description: "Versatile cross-training shoes with enhanced stability. Ideal for varied workout routines.",
+    promotion: true
+  },
+  {
+    id: 17,
+    name: "Retro Classic",
+    price: 119.99,
+    image: "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77",
+    description: "Vintage-inspired sneakers with modern comfort features. Timeless style for everyday wear.",
+    promotion: false
+  },
+  {
+    id: 18,
+    name: "Aqua Grip",
+    price: 134.99,
+    image: "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a",
+    description: "Water-resistant training shoes with special grip soles. Perfect for outdoor workouts in any weather.",
+    promotion: true
   }
 ];
